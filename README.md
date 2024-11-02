@@ -1394,7 +1394,7 @@ iperf Done.
 
 ### Summary
 
-These measurement results show that there is almost no difference in UPF performance between srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) when compared with [the measurement results using PacketRusher](https://github.com/s5uishida/simple_measurement_of_upf_performance_4#results).
+The measurement results show that there is almost no difference in the UPF performance using srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE), unlike [using PacketRusher](https://github.com/s5uishida/simple_measurement_of_upf_performance_4#results).
 I suspect that the measurement conditions used this time were not sufficient to apply a load sufficient to bring out the performance differences of the UPF.
 In any case, I think I learned the lesson that when measuring performance, it is necessary to carefully consider the measurement conditions for applying load and the settings that will bring out the best performance.
 
