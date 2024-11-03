@@ -1,6 +1,7 @@
 # Simple Measurement of UPF Performance 5
 This describes simple performance measurements of several open source UPFs by using [srsRAN_Project](https://github.com/srsran/srsRAN_Project) and [srsRAN_4G](https://github.com/srsran/srsRAN_4G) as the performance measurement tool.
 This was measured on the VMs on Proxmox VE.
+For other measurement results, please see [Performance Measurement](https://github.com/s5uishida/sample_config_misc_for_mobile_network#performance_measurement).
 
 **Note. Performance measurement results are highly dependent on the measurement conditions. These results are only examples of results under certain measurement conditions.
 And this is a very simple measurement, and according to [this comment](https://github.com/open5gs/open5gs/discussions/1780#discussioncomment-10853290), it doesn't seem to make much sense to measure between VMs. I hope it will serve as a reference for a simple configuration when measuring on real devices.**
