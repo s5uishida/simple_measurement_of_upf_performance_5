@@ -928,7 +928,9 @@ wait ${PID_LIST}
 ## Measure using srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE)
 
 This time, I will measure only one connection by one UE.
-First, run srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) to establish a connection that will be used to measure performance. Then, start the iperf3 server on the Data Network Gateway.
+First, run srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) to establish a connection that will be used to measure performance.
+Then, start the iperf3 server on the Data Network Gateway and connect to it from an iperf3 client on VM2 to take measurements.
+Note that ping measurements are not performed because the connection between srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) is via ZeroMQ, and the RTT value cannot be expected.
 
 <a id="run_srsran"></a>
 
@@ -990,7 +992,6 @@ RRC NR reconfiguration successful.
 ### Try iPerf3 client on VM2
 
 Try iperf3 client to the address(`192.168.16.152`) of N6 interface on Data Network Gateway.
-Note that ping measurements are not performed because the connection between srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) is via ZeroMQ, and the RTT value cannot be expected.
 
 e.g.) The UPF used in the measurement below is UPG-VPP v1.13.0.
 ```
