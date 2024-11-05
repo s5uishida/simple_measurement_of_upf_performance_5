@@ -930,7 +930,8 @@ wait ${PID_LIST}
 This time, I will measure only one connection by one UE.
 First, run srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) to establish a connection that will be used to measure performance.
 Then, start the iperf3 server on the Data Network Gateway and connect to it from an iperf3 client on VM2 to take measurements.
-Note that ping measurements are not performed because the connection between srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) is via ZeroMQ, and the RTT value cannot be expected.
+
+**Note that ping measurements are not performed because the connection between srsRAN_Project (gNodeB) and srsRAN_4G (NR-UE) is via ZeroMQ, and the RTT value cannot be expected.**
 
 <a id="run_srsran"></a>
 
